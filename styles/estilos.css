@@ -1,0 +1,614 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+  
+body {
+    background-color: #e0e0e0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.3; 
+    margin: 0;
+    padding: 110px 0 0 0;
+}
+  
+p {
+    color: #030336;
+    margin: 0; 
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+
+/* Definiciones del Header */
+.header {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    left: 0;
+	top: 0;
+    z-index: 40;
+    background-image: linear-gradient(to bottom, #F70759, #ff2e74, #fc4884); 
+}
+
+.encabezado {
+    display: flex;
+    width: 100%;
+} 
+
+.contlogo {
+    width: 40%;
+}
+
+label.logo {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 35px;
+    color: black;
+    line-height: 40px;
+    padding: 35px 40px;    
+}
+
+.logocarrito {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 35px;
+    color: white;
+    line-height: 40px;
+    padding: 35px 40px;    
+}
+
+.contcarrito {
+      width: 60%;
+      display: flex;
+      justify-content: flex-end;
+}
+  
+.imgCarrito {
+    padding-top: 30px;
+    width: 50px;
+    height: 80px;
+    cursor: pointer;
+}
+  
+.cantdestinos {
+    font-size: 21px;
+    font-weight: bolder;
+    color:#1e3c4e;
+    padding-top: 45px;
+    padding-left: 19px;
+}
+  
+.lbldestinos {
+    font-size: 21px;
+    font-weight: bolder;
+    color:#1e3c4e;
+    padding-top: 45px;
+    padding-right: 6%;
+}
+  
+/* Definiciones del Footer */
+.footer {
+    width: 100%;
+    height: 70px;
+    background-color: #60579b;
+    background-image: linear-gradient(to bottom, #F70759, #ff2e74, #fc4884);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+  
+.footer h3 {
+    color: white; 
+}
+ 
+.redessociales {
+    width: 30%; 
+}
+  
+.copyright {
+    width: 40%;
+    margin-top: 8px;
+    text-align: center; 
+}
+  
+.contacto {
+    width: 30%;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+  
+@keyframes zoomWAP {
+    0% {
+      transform: scale(0.8, 0.8); }
+    33% {
+      transform: scale(0.9, 0.9); }
+    66% {
+      transform: scale(1, 1); }
+    100% {
+      transform: scale(1.1, 1.1); } 
+}
+  
+.telWhatsapp {
+    color: white;
+    font-family: Times New Roman;
+    font-weight: bolder; 
+}
+  
+.telefonoContacto {
+    margin-bottom: 0;
+    line-height: 1; 
+}
+  
+/* Definiciones del Contenido */
+
+.container {
+    padding-bottom: 40px;
+}
+
+.containerCarrito {
+    padding: 30px 0;
+}
+
+.formulario {  
+    font-size: 13px;
+    padding: 50px 70px 100px 0;
+}
+
+.frmpasajeros {
+    float: left;
+    width: 20%;
+}
+
+.frmcuotas {
+    padding-bottom: 50px;
+}
+
+.pasajeros {
+    width: 50px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.micarrusel {    
+    padding-bottom: 40px;
+    display: flex;
+}
+
+.columna1a {
+    float: left;
+    width: 30%;
+}
+
+.columna2a {
+    float: left;
+    width: 40%;
+    padding-top: 70px;
+}
+
+.columna3a {
+    float: left;
+    width: 30%;
+}
+
+.promociones {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.micarrito {
+    display: flex;
+}
+
+.columna1b {
+    float: left;
+    width: 25%;    
+}
+
+.columna2b {
+    float: left;
+    width: 75%;
+    padding-left: 10px;
+}
+
+#carrito {
+    width: 100%;
+    height: 0px;
+    font-family: 'Courier New';
+    font-size: 12px;
+    background-color: rgb(250, 246, 184);
+    overflow: auto;
+}
+
+.lblcarrito {
+    padding-top: 15px;
+}
+
+.carritoDestino {
+    float: left; 
+    width: 80%;
+}
+
+.carritoPrecio {
+    float: right; 
+    width: 20%;
+}
+
+.oferta {
+    font-family:'Trebuchet MS';
+    font-family: 'Berkshire Swash', cursive;
+    color:brown;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Configuracion del carrito */
+
+.contPaquetes {
+    margin: 70px 10%;
+}
+
+.subTitulo {
+    width: 90%; 
+    margin-bottom: 15px;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 22% 15% 12% 17%;
+    align-items: center;
+    justify-items: center;
+}
+
+.grilla div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grilla .tableHeader,.tableDestino,.tablePrecioUnitario,.tablePrecioTotal,.tablePrecioFinal {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.grilla .tableHeader {
+    font-size: 13px;
+    font-weight: bolder;
+    background: #c1e6d4;
+    height: 100%;   
+    width: 100%;
+}
+
+.grilla .tableHeaderDestino {
+    justify-content: left;
+    padding-left: 5px;
+}
+
+.grilla .tableDestino {
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+    background: #ebeaf8;
+    justify-content: left;
+    padding-left: 5px;
+}
+
+.grilla .tablePrecioUnitario {
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+    background: #ebeaf8;
+}
+
+.grilla .tablePrecioTotal {
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+    background: #ebeaf8;
+}
+
+.grilla .tablePrecioFinal {
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+    background: #ebeaf8;
+}
+
+.descPagos {
+    font-size: 12px;
+}
+
+/* Definiciones de estilos para los Destinos turisticos */
+
+.mainDestinos {
+    text-align: center;
+}
+
+.mainDestinos .nombreDestino {
+    font-family:'Trebuchet MS';
+    font-weight: bolder;
+    text-align: center;
+}
+
+.mainDestinos .fotoDestino {
+    text-align: center;
+}
+
+.mainDestinos .fotoDestino:hover {
+    transition: all 0.5s;
+    transform: scale(1.1,1.1);
+}
+
+.mainDestinos .descDestino {
+    padding: 4% 10%;
+}
+
+.mainDestinos .botonDestino {
+    text-align: center; 
+    padding-bottom: 6%;
+}
+
+.mainDestinos .imagenDestino {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.tigre {
+    content: url("../images/tigre.jpg");
+    display: inline-block; 
+}
+  
+.planetario {
+    content: url("../images/planetario.jpg");
+    display: inline-block;
+ }
+  
+.caminito {
+    content: url("../images/caminito.jpg");
+    display: inline-block; 
+}
+  
+.teatrocolon {
+    content: url("../images/teatrocolon.jpg");
+    display: inline-block; 
+}
+  
+.ptomadero {
+    content: url("../images/ptomadero.jpg");
+    display: inline-block; 
+}
+  
+.pzamayo {
+    content: url("../images/pzamayo.jpg");
+    display: inline-block; 
+}
+  
+.congreso {
+    content: url("../images/congreso.jpg");
+    display: inline-block; 
+}
+  
+.reserva {
+    content: url("../images/reserva.jpg");
+    display: inline-block; 
+}
+
+.btnAgregar {
+    background-color: #C25E30;
+    color: #fff;
+    width: 170px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 1rem; 
+}
+  
+.btnAgregar:hover {
+    background-color: #960d1f; 
+}
+
+.btnMostrarCarrito,.btnVaciarCarrito {
+    background-color: #C25E30;
+    color: #fff;
+    height: 24px;
+    border-radius: 5px;
+    font-size: 12px; 
+}
+  
+.btnMostrarCarrito:hover,.btnVaciarCarrito:hover {
+    background-color: #960d1f; 
+}
+
+.btnVolver,.btnPagar {
+    background-color: #C25E30;
+    color: #fff;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1rem; 
+}
+  
+.btnVolver:hover,.btnPagar:hover {
+    background-color: #960d1f; 
+}
+
+/* Definiciones de estilos para Monitores y Pantallas */
+
+@media only screen and (min-width: 1024px)
+{   
+    /* Definiciones del Footer */
+    .imgWhatsapp {
+        width: 5%;
+        height: 100%;
+        margin-right: 11%;
+        margin-top: 5px;
+        animation-duration: 2s;
+        animation-name: zoomWAP;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-direction: alternate-reverse;   
+    }
+    .telWhatsapp {
+        font-size: 16px;
+        padding-right: 7%;
+    }
+    .imagenContacto {
+        width: 65px;
+        height: 55px;
+    }
+    .redessociales{
+        padding: 4px 0 0 20px;
+    }
+    .imagenfacebook {
+        width: 41px;
+        height: 35px;
+    }    
+    .imagentwitter {
+        width: 38x;
+        height: 35px;
+    }
+    .imageninstagram {
+        width: 41px;
+        height: 35px;
+    }
+    .copyright {
+        margin-top: 8px;
+    }
+    .copyright h3 {
+        font-size: 14px;
+    }
+    .titulo {
+        font-size: 32px;
+    }
+    .filaIndex {
+        padding-bottom: 40px;
+    }
+    .mainDestinos .nombreDestino {
+        font-size: 20px;
+    }
+    .descDestino {
+        font-size: 13px;
+    }
+    .subTitulo {
+        font-size: 17px;
+    }
+}
+
+/* Definiciones de estilos para Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px)
+{   
+    /* Definiciones del Footer */
+    .imgWhatsapp {
+        width: 5%;
+        height: 100%;
+        margin-right: 14%;
+        animation-duration: 2s;
+        animation-name: zoomWAP;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-direction: alternate-reverse;   
+    }
+    .telWhatsapp {
+        font-size: 14px;
+        padding-right: 11%;
+    }
+    .imagenContacto {
+        width: 60px;
+        height: 50px;
+        margin-top: 3px;
+    }    
+    .redessociales{
+        padding: 4px 0 0 20px;
+    }
+    .imagenfacebook {
+        width: 26px;
+        height: 20px;
+    }    
+    .imagentwitter {
+        width: 23x;
+        height: 20px;
+    }
+    .imageninstagram {
+        width: 26px;
+        height: 20px;
+    }
+    .copyright {
+        margin-top: 8px;
+    }
+    .copyright h3 {
+        font-size: 11px;
+    }
+    .titulo {
+        font-size: 25px;
+    }
+    .filaIndex {
+        padding-bottom: 30px;
+    }
+    .mainDestinos .nombreDestino {
+        font-size: 17px;
+    }
+    .descDestino {
+        font-size: 11px;
+    }
+    .subTitulo {
+        font-size: 16px;
+    }
+}
+
+/* Definiciones de estilos para Celulares */
+
+@media only screen and (min-width: 320px) and (max-width: 767px)
+{
+    /* Definiciones del Footer */
+    .imgWhatsapp {
+        width: 29px;
+    }    
+    .telWhatsapp {
+        font-size: 10px;
+        padding-right: 10%;
+        padding-left: 3px;
+    }
+    .imagenContacto {
+        height: 32px;
+    }
+    .redessociales{
+        padding: 4px 0 0 10px;
+    }
+    .imagenfacebook {
+        width: 21px;
+        height: 15px;
+    }    
+    .imagentwitter {
+        width: 18x;
+        height: 15px;
+    }    
+    .imageninstagram {
+        width: 21px;
+        height: 15px;
+    }
+    .copyright {
+        margin-top: 10px;
+    }
+    .copyright h3 {
+        font-size: 6px;
+    }
+    .titulo {
+        font-size: 17px;
+    }    
+    .filaIndex {
+        padding-bottom: 20px;
+    }
+    .mainDestinos .nombreDestino {
+        font-size: 16px;
+    }
+    .descDestino {
+        font-size: 9px;
+    }
+    .subTitulo {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="sitio donde podras contratar paquetes turisticos y excursiones para conocer la provincia de Buenos Aires - Argentina">
+    <meta name="keywords"  content="TURISMO, VIAJES, EXCURSIONES, BUENOS AIRES, ARGENTINA">
+
+    <title>City Travel BA - Excursiones</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="styles/estilos.css" /> 
+    <link rel="stylesheet" href="styles/BerkshireSwash.css" />  
+
+    <!-- JQuery 3.5.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header"> 
+        <div class="encabezado">
+            <div class="contlogo">
+                <label class="logo" id="logo">City Travel BA</label>
+            </div>
+            <div class="contcarrito">
+                <img alt="Carrito" src="./images/carrito.jpg" class="imgCarrito" id="btnCarrito">
+                <label class="cantdestinos" id="cantDestinos">0</label>
+                <label class="lbldestinos">&nbsp;items</label>
+            </div>
+        </div>
+    </header>
+
+    <div class="container2">        
+        <section>
+            <!-- Carrusel Promocional -->
+            <div class="micarrusel">
+                <div class="columna1a"></div>
+                <div class="columna2a">
+                    <div id="citytravel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                        <ul class="carousel-indicators">
+                            <li data-target="#citytravel" data-slide-to="0" class="active"></li>
+                            <li data-target="#citytravel" data-slide-to="1"></li>
+                            <li data-target="#citytravel" data-slide-to="2"></li>
+                            <li data-target="#citytravel" data-slide-to="3"></li>
+                            <li data-target="#citytravel" data-slide-to="4"></li>
+                            <li data-target="#citytravel" data-slide-to="5"></li>  
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" id="img1"></div>
+                            <div class="carousel-item" id="img2"></div>
+                            <div class="carousel-item" id="img3"></div>
+                            <div class="carousel-item" id="img4"></div> 
+                            <div class="carousel-item" id="img5"></div> 
+                            <div class="carousel-item" id="img6"></div> 
+                        </div>
+                        <a class="carousel-control-prev" href="#citytravel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#citytravel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div> 
+                <div class="columna3a">
+                    <div class="micarrito" id="micarrito">
+                        <!-- Carrito de Compras -->
+                        <div class="columna1b"></div>
+                        <div class="columna2b" id="carrito">
+                            <label class="lblcarrito">Mi Carrito (Precio por Pasajero):</label>
+                            <br><br>
+                            <div class="carritoDestino">
+                                <label id="dest"></label>
+                            </div>
+                            <div class="carritoPrecio">
+                                <label id="precio"></label>
+                            </div>
+                            <div style="height:60px;"></div>
+                            <div style="text-align:center">
+                                <br><br><br>
+                                <button type="button" class="btnMostrarCarrito" id="btnPagar">&nbsp;Mostrar Carrito&nbsp;</button>&nbsp;
+                                <button type="button" class="btnVaciarCarrito" id="btnVaciar">&nbsp;Vaciar Carrito&nbsp;</button>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section> 
+            <!-- Promociones -->
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 promociones">
+                    <label class="oferta" id="oferta">Aquí podrá observar las Promociones Especiales</label>
+                </div>                    
+                <div class="col-md-1"></div>
+            </div>  
+        </section>
+
+        <section>
+            <!-- Destinos Ofrecidos -->
+            <div class="mainDestinos">
+                <!-- Fila 1 -->
+                <div class="row filaIndex">
+                    <div class="col-md-4 mainDestinos" id="dest0"></div>
+                    <div class="col-md-4 mainDestinos" id="dest1"></div>
+                    <div class="col-md-4 mainDestinos" id="dest2"></div>
+                </div>
+                <!-- Fila 2 -->
+                <div class="row filaIndex">
+                    <div class="col-md-4 mainDestinos" id="dest3"></div>
+                    <div class="col-md-4 mainDestinos" id="dest4"></div>
+                    <div class="col-md-4 mainDestinos" id="dest5"></div>                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="redessociales">
+            <a href="http://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" class="imagenfacebook" /></a>&nbsp; 
+            <a href="http://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" class="imagentwitter" /></a>&nbsp;
+            <a href="http://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" class="imageninstagram" /></a>
+        </div>
+        <div class="copyright">
+            <h3>City Travel BA - Derechos Reservados &copy; 2021</h3>
+        </div>
+        <div class="contacto">
+            <div class="imgWhatsapp">
+                <a href="https://api.whatsapp.com/send?phone=541141234567"><img src="images/whatsapp.png" alt="Contacto" class="imagenContacto" /></a>
+            </div>
+            <div class="telWhatsapp">
+                <label class="telefonoContacto">+541141234567</label>
+            </div>        
+        </div>
+    </footer>
+   
+    <script src="js/miscript.js"></script>
+
+    <!-- JQuery Animated Colors -->
+    <script src="js/jquery.animate-colors-min.js" type="text/javascript"></script>
+    <!-- Sweet Alert 2 -->
+    <script src="js/sweetalert2.all.min.js"></script>
+    <!-- Bootstrap 4.5.2 - JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

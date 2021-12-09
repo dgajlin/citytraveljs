@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords"  content="TURISMO, VIAJES, EXCURSIONES, BUENOS AIRES, ARGENTINA">
+
+    <title>City Travel BA - Excursiones</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="styles/estilos.css" />
+    <link rel="stylesheet" href="styles/BerkshireSwash.css" />
+    
+    <!-- JQuery 3-5-1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header"> 
+        <div class="encabezado">
+            <div class="contlogo">
+                <label class="logocarrito">City Travel BA</label>
+            </div>
+        </div>
+    </header>
+
+    <form action="#">
+        <div class="containerCarrito">
+            <section class="contPaquetes">
+                <div class="row">
+                    <div class="col-md-12 col-sd-4">
+                        <h2 class="subTitulo">Mi Carrito:</h2>
+                        <div class="grilla" id="grilla">
+                            <div class="tableHeader tableHeaderDestino">Destino</div>
+                            <div class="tableHeader">Precio x Pasajero</div>
+                            <div class="tableHeader">Precio Total</div>
+                            <div class="tableHeader">Precio Final (*1)(*2)</div>
+                        </div>  
+                    </div>
+                </div>
+                <br>
+                <p id="parrafo" class="descPagos"></p>
+                
+                <div class="formulario">
+                    <div class="frmpasajeros">
+                        <label for="pasajeros">Cantidad de Pasajeros:</label><br />
+                        <input type="number" min="1" max="20" value="1" name="pasajeros" id="pasajeros" class="pasajeros" required /><br /><br />
+                    </div>
+                    <div class="frmcuotas">
+                        <label for="tipo">Cantidad de Cuotas:</label><br />
+                        <select name="cuotas" class="cuotas" id="cuotas">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>6</option>
+                            <option>9</option>
+                            <option>12</option>
+                            <option>15</option>
+                            <option>18</option>
+                            <option>24</option>
+                        </select>
+                    </div>
+                    <input type="button" class="btnPagar" id="btnPagar" value="Pagar"></input>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="button" class="btnVolver" id="btnVolver" value="Volver"></input>
+                </div>
+            </section>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <div class="redessociales">
+            <a href="http://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" class="imagenfacebook" /></a>&nbsp; 
+            <a href="http://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" class="imagentwitter" /></a>&nbsp;
+            <a href="http://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" class="imageninstagram" /></a>
+        </div>
+        <div class="copyright">
+            <h3>City Travel BA - Derechos Reservados &copy; 2021</h3>
+        </div>
+        <div class="contacto">
+            <div class="imgWhatsapp">
+                <a href="https://api.whatsapp.com/send?phone=541141234567"><img src="images/whatsapp.png" alt="Contacto" class="imagenContacto" /></a>
+            </div>
+            <div class="telWhatsapp">
+                <label class="telefonoContacto">+541141234567</label>
+            </div>        
+        </div>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+
+    <!-- Sweet Alert 2 -->
+    <script src="js/sweetalert2.all.min.js"></script>
+    <!-- Bootstrap 4.5.2 - JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
